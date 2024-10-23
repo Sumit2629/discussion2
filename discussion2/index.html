@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Pane: List of Questions and Search -->
+        <div class="left-pane">
+            <h3>Questions</h3>
+            <input type="text" id="search-box" placeholder="Search questions">
+            <ul id="question-list"></ul>
+        </div>
+
+        <!-- Right Pane: Question Form, Responses and Upvote/Downvote -->
+        <div class="right-pane" id="right-pane">
+            <!-- Question Form (Default) -->
+            <div id="question-form-container">
+                <h3>Ask a Question</h3>
+                <form id="question-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    <br>
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="question" required></textarea>
+                    <br>
+                    <button type="submit">Submit Question</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
